@@ -24,7 +24,7 @@ def main():
             output.append(char+'\n')
             output.append('%d %d %d %d\n'%(x,y,width,height))
 
-    new_fnt_file=io.open(fname+'.txt','w',encoding='utf-16')
+    new_fnt_file=io.open(fname+'.txt','w',encoding='utf-16',newline='\n')
     new_fnt_file.writelines(output)
     new_fnt_file.close()
 
